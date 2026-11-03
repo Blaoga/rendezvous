@@ -493,7 +493,7 @@
   }
 
     // ==========================================================================
-  // CANVAS D'AMBIANCE CINÃ‰MATOGRAPHIQUE : PÃ‰TALES DE ROSES & POUSSIÃˆRES D'Ã‰TOILES DORÃ‰ES âœ¨ðŸŒ¹
+  // CANVAS D'AMBIANCE CINÃ‰MATOGRAPHIQUE : PÃ‰TALES DE ROSES & POUSSIÃˆRES D'Ã‰TOILES DORÃ‰ES ✨🌹
   // ==========================================================================
   function initAmbientCanvas() {
     const canvas = document.getElementById('ambient-canvas');
@@ -513,7 +513,7 @@
     window.addEventListener('resize', resize);
     resize();
 
-    // PÃ©tales de roses flottants et tombant doucement
+    // Pétales de roses flottants et tombant doucement
     class RosePetal {
       constructor() {
         this.reset(true);
@@ -561,7 +561,7 @@
       }
     }
 
-    // PoussiÃ¨res d'Ã©toiles dorÃ©es scintillantes
+    // Poussières d'étoiles dorées scintillantes
     class GoldSparkle {
       constructor() {
         this.reset(true);
@@ -747,27 +747,43 @@
   // ==========================================================================
   // 1. ARRIVÃ‰E SPECTACULAIRE CINÃ‰MATOGRAPHIQUE
   // ==========================================================================
-  function setupArrivalOverlay() {
+  function enterExperience(e) {
+    if (e) {
+      e.preventDefault();
+      e.stopPropagation();
+    }
     const overlay = document.getElementById('intro-arrival-overlay');
-    const btnEnter = document.getElementById('btn-enter-experience');
     const nameInput = document.getElementById('her-name-input');
+    if (!overlay) return;
 
-    if (!overlay || !btnEnter) return;
-
-    btnEnter.addEventListener('click', () => {
+    initAudio();
+    try {
       playTone(523.25, 0.25, 'sine', 0.1);
       setTimeout(() => playTone(659.25, 0.25, 'sine', 0.1), 100);
       setTimeout(() => playTone(783.99, 0.35, 'sine', 0.12), 200);
+    } catch (err) {}
 
+    try {
       fireRomanticConfetti(45);
+    } catch (err) {}
 
-      overlay.classList.add('fade-out');
-      setTimeout(() => {
-        overlay.style.display = 'none';
-        if (nameInput) nameInput.focus();
-      }, 750);
-    });
+    overlay.classList.add('fade-out');
+    setTimeout(() => {
+      overlay.style.display = 'none';
+      if (nameInput) {
+        nameInput.focus();
+      }
+    }, 700);
   }
+
+  function setupArrivalOverlay() {
+    const btnEnter = document.getElementById('btn-enter-experience');
+    if (btnEnter) {
+      btnEnter.addEventListener('click', enterExperience);
+      btnEnter.addEventListener('touchend', enterExperience);
+    }
+  }
+
   function setupSecretEnvelope() {
     const trigger = document.getElementById('secret-envelope-trigger');
     const envelopeEl = document.getElementById('secret-envelope-el');
@@ -833,7 +849,7 @@
         e.stopPropagation();
       }
 
-      // AprÃ¨s 4 esquives, le bouton cesse de fuir et permet d'ouvrir le modal poli
+      // Après 4 esquives, le bouton cesse de fuir et permet d'ouvrir le modal poli
       if (state.escapeCount >= 4) {
         openPoliteDeclineModal();
         return;
@@ -849,7 +865,7 @@
       const distanceX = (Math.cos(angle) * maxRangeX) * (Math.random() * 0.5 + 0.6);
       const distanceY = (Math.sin(angle) * maxRangeY) * (Math.random() * 0.5 + 0.6);
 
-      btnNo.style.transform = 	ranslate(px, px);
+      btnNo.style.transform = "translate(" + distanceX + "px, " + distanceY + "px)";
     }
 
     btnNo.addEventListener('mouseenter', dodge);
@@ -1233,18 +1249,18 @@
 
       // Compliments flatteurs et amusants par plat camerounais
   const dishCompliments = {
-    'ndole': "NdolÃ© royal ! Madame a du goÃ»t, c'est du trÃ¨s haut niveau ! ðŸ‘‘ðŸ²",
-    'poulet-dg': "Poulet DG ! Madame aime les choses de Directeur GÃ©nÃ©ral ðŸ˜‚ðŸ‘‘",
-    'poisson-braise': "Poisson braisÃ© ! Avec les miondos bien chauds, c'est validÃ© ! ðŸŸðŸ”¥",
-    'eru': "Eru complet ! Le vrai goÃ»t du Mboa, tu connais les vrais bails ! ðŸŒ¿âœ¨",
-    'koki': "Koki royal ! Doux et raffinÃ© comme toi ! ðŸ’›",
-    'soya': "Soya pimentÃ© ! Ambiance nocturne et complicitÃ© garantie ! ðŸ¢ðŸ”¥",
-    'achu': "Achu soup jaune ! La gastronomie des grands jours, respect ! ðŸ²âœ¨",
-    'kondre': "KondrÃ© bien mijotÃ© ! Un plat rÃ©confortant pour une personne spÃ©ciale ! ðŸŒâ¤ï¸",
-    'burger': "Burger gourmand ! Moderne et gÃ©nÃ©reux ! ðŸ”âœ¨",
-    'pizza': "Pizza artisanale ! Parfait pour les regards complices ! ðŸ•â¤ï¸",
-    'pates': "PÃ¢tes fraÃ®ches Ã  l'italienne ! TrÃ¨s romantique, bella ! ðŸâœ¨",
-    'grillades': "Grillades & salade ! FraÃ®cheur et Ã©lÃ©gance ! ðŸ¥—âœ¨"
+    'ndole': "Ndol\u00E9 royal ! Madame a du go\u00FBt, c'est du tr\u00E8s haut niveau ! \uD83D\uDC51\uD83C\uDF72",
+    'poulet-dg': "Poulet DG ! Madame aime les choses de Directeur G\u00E9n\u00E9ral \uD83D\uDE02\uD83D\uDC51",
+    'poisson-braise': "Poisson brais\u00E9 ! Avec les miondos bien chauds, c'est valid\u00E9 ! \uD83D\uDC1F\uD83D\uDD25",
+    'eru': "Eru complet ! Le vrai go\u00FBt du Mboa, tu connais les vrais bails ! \uD83C\uDF3F\u2728",
+    'koki': "Koki royal ! Doux et raffin\u00E9 comme toi ! \uD83D\uDC9B",
+    'soya': "Soya piment\u00E9 ! Ambiance nocturne et complicit\u00E9 garantie ! \uD83C\uDF62\uD83D\uDD25",
+    'achu': "Achu soup jaune ! La gastronomie des grands jours, respect ! \uD83C\uDF72\u2728",
+    'kondre': "Kondr\u00E9 bien mijot\u00E9 ! Un plat r\u00E9confortant pour une personne sp\u00E9ciale ! \uD83C\uDF4C\u2764\uFE0F",
+    'burger': "Burger gourmand ! Moderne et g\u00E9n\u00E9reux ! \uD83C\uDF54\u2728",
+    'pizza': "Pizza artisanale ! Parfait pour les regards complices ! \uD83C\uDF55\u2764\uFE0F",
+    'pates': "P\u00E2tes fra\u00EEches \u00E0 l'italienne ! Tr\u00E8s romantique, bella ! \uD83C\uDF5D\u2728",
+    'grillades': "Grillades & salade ! Fra\u00EEcheur et \u00E9l\u00E9gance ! \uD83E\uDD57\u2728"
   };
 
   function showDishToast(dishId, dishTitle) {
@@ -1253,10 +1269,10 @@
 
     let compliment = dishCompliments[dishId];
     if (!compliment) {
-      compliment = Â«  Â» ! Madame a un goÃ»t exquis, on va se rÃ©galer ! ðŸ˜‹âœ¨;
+      compliment = '\u00AB ' + dishTitle + ' \u00BB ! Madame a un go\u00FBt exquis, on va se r\u00E9galer ! \uD83D\uDE0B\u2728';
     }
 
-    toast.innerHTML = <span>âœ¨</span><span></span>;
+    toast.innerHTML = '<span>\u2728</span><span>' + compliment + '</span>';
     toast.classList.add('show');
     playTone(720, 0.15, 'sine', 0.08);
 
@@ -1265,7 +1281,8 @@
       toast.classList.remove('show');
     }, 2800);
   }
-    const allFoodCards = document.querySelectorAll('#food-cameroon-grid .choice-card, #food-intl-grid .choice-card');
+
+  const allFoodCards = document.querySelectorAll('#food-cameroon-grid .choice-card, #food-intl-grid .choice-card');
     allFoodCards.forEach(card => {
       card.addEventListener('click', () => {
         const title = card.getAttribute('data-title');
@@ -1761,7 +1778,8 @@ Affaire de cœur seulement ! J'attends notre rendez-vous avec impatience 😊❤
     submitName,
     onYesClicked,
     sendWhatsApp,
-    copySummaryToClipboard
+    copySummaryToClipboard,
+    enterExperience
   };
 
 })();

@@ -29,28 +29,28 @@
 </head>
 <body>
 
-  <!-- Ã‰cran d'ArrivÃ©e Spectaculaire CinÃ©matographique -->
+  <!-- Écran d'Arrivée Spectaculaire Cinématographique -->
   <div id="intro-arrival-overlay" class="intro-arrival-overlay">
     <div class="arrival-backdrop-glow"></div>
     <div class="arrival-content">
       <div class="arrival-glowing-heart-wrap">
         <div class="arrival-heart-pulse"></div>
-        <div class="arrival-heart-icon">ðŸ’–</div>
+        <div class="arrival-heart-icon">💖</div>
       </div>
-      <span class="arrival-badge">âœ¨ Une expÃ©rience confidentielle</span>
-      <h1 class="arrival-title">Une petite surprise t'attendâ€¦</h1>
-      <p class="arrival-subtitle">Prends une grande inspiration, ceci a Ã©tÃ© prÃ©parÃ© spÃ©cialement avec amour.</p>
-      <button type="button" id="btn-enter-experience" class="btn-arrival-discover">
-        <span>DÃ©couvrir</span>
-        <span>â¤ï¸</span>
+      <span class="arrival-badge">✨ Une expérience confidentielle</span>
+      <h1 class="arrival-title">Une petite surprise t'attend…</h1>
+      <p class="arrival-subtitle">Prends une grande inspiration, ceci a été préparé spécialement avec amour.</p>
+      <button type="button" id="btn-enter-experience" class="btn-arrival-discover" onclick="window.App && window.App.enterExperience ? window.App.enterExperience(event) : null">
+        <span>Découvrir</span>
+        <span>❤️</span>
       </button>
     </div>
   </div>
+
   <!-- Canvas d'ambiance discret (Cœurs doux flottants) -->
   <canvas id="ambient-canvas"></canvas>
   <div class="ambient-glow glow-top-left"></div>
   <div class="ambient-glow glow-bottom-right"></div>
-
   <!-- Conteneur Principal -->
   <div class="app-container">
 

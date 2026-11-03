@@ -1,6 +1,6 @@
 /* ==========================================================================
-   STYLE Ã‰LÃ‰GANT & ROMANTIQUE â€” INVITATION RENDEZ-VOUS
-   InspirÃ© de l'excellence UI/UX moderne, chic, raffinÃ© et sÃ©duisant
+   STYLE Ã‰LÃ‰GANT & ROMANTIQUE — INVITATION RENDEZ-VOUS
+   Inspiré de l'excellence UI/UX moderne, chic, raffiné et séduisant
    ========================================================================== */
 
 :root {
@@ -979,7 +979,7 @@ input[type="date"].custom-input {
   border-color: #CBD5E1;
 }
 
-/* Navigation buttons (PrÃ©cÃ©dent / Continuer) */
+/* Navigation buttons (Précédent / Continuer) */
 .wizard-nav {
   display: flex;
   align-items: center;
@@ -1008,7 +1008,7 @@ input[type="date"].custom-input {
   border-color: #CBD5E1;
 }
 
-/* Modale de rÃ©glage secret / direct pour le numÃ©ro WhatsApp */
+/* Modale de réglage secret / direct pour le numéro WhatsApp */
 .config-modal-overlay {
   position: fixed;
   top: 0;
@@ -1143,7 +1143,7 @@ input[type="date"].custom-input {
 }
 
 /* ==========================================================================
-   NOUVELLES FONCTIONNALITÃ‰S PREMIUM â€” EXPÃ‰RIENCE ROMANTIQUE ENRICHIE
+   NOUVELLES FONCTIONNALITÃ‰S PREMIUM — EXPÃ‰RIENCE ROMANTIQUE ENRICHIE
    ========================================================================== */
 
 /* --- 1. Enveloppe interactive du Message Secret --- */
@@ -1315,7 +1315,7 @@ input[type="date"].custom-input {
   letter-spacing: 0.5px;
 }
 
-/* --- 3. Mini-Jeu : Test de CompatibilitÃ© --- */
+/* --- 3. Mini-Jeu : Test de Compatibilité --- */
 .quiz-container {
   display: flex;
   flex-direction: column;
@@ -1402,7 +1402,7 @@ input[type="date"].custom-input {
   margin: 6px 0;
 }
 
-/* --- 4. La BoÃ®te Ã  Surprises (3 BoÃ®tes MystÃ©rieuses) --- */
+/* --- 4. La Boîte à Surprises (3 Boîtes Mystérieuses) --- */
 .gift-boxes-grid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
@@ -1560,7 +1560,7 @@ input[type="date"].custom-input {
 }
 
 .romantic-parchment-letter::before {
-  content: 'ðŸŒ¹';
+  content: '🌹';
   position: absolute;
   top: -18px;
   left: 50%;
@@ -1586,7 +1586,7 @@ input[type="date"].custom-input {
   margin-top: 16px;
 }
 
-/* Responsive pour les nouvelles boÃ®tes et quiz */
+/* Responsive pour les nouvelles boîtes et quiz */
 @media (max-width: 640px) {
   .gift-boxes-grid {
     grid-template-columns: 1fr;
@@ -1609,7 +1609,7 @@ input[type="date"].custom-input {
 }
 
 /* ==========================================================================
-   STYLE SPÃ‰CIAL Ã‰DITION CAMEROUNAISE ðŸ‡¨ðŸ‡² (ROMANTIQUE, CHIC & LOCAL)
+   STYLE SPÃ‰CIAL Ã‰DITION CAMEROUNAISE 🇨🇲 (ROMANTIQUE, CHIC & LOCAL)
    ========================================================================== */
 
 /* Touche subtile drapeau Cameroun (Vert, Rouge, Jaune) */
@@ -1632,7 +1632,7 @@ input[type="date"].custom-input {
 .cm-dot.red { background-color: #CE1126; position: relative; }
 .cm-dot.yellow { background-color: #FCD116; }
 
-/* SÃ©lecteur de villes camerounaises */
+/* Sélecteur de villes camerounaises */
 .city-selector-section {
   margin-bottom: 22px;
 }
@@ -1684,7 +1684,7 @@ input[type="date"].custom-input {
   box-shadow: 0 4px 12px rgba(225, 29, 72, 0.18);
 }
 
-/* Onglets CatÃ©gories Cuisine */
+/* Onglets Catégories Cuisine */
 .food-tabs-container {
   display: flex;
   gap: 8px;
@@ -1816,7 +1816,7 @@ input[type="date"].custom-input {
   color: #FFFFFF;
 }
 
-/* BanniÃ¨re d'invitation 100% offerte avec dÃ©licatesse */
+/* Bannière d'invitation 100% offerte avec délicatesse */
 .invitation-complimentary-banner {
   background: linear-gradient(135deg, #FFF7F8 0%, #FFFDF9 100%);
   border: 1.5px solid #FDE68A;
@@ -1867,10 +1867,10 @@ input[type="date"].custom-input {
 }
 
 /* ==========================================================================
-   STYLE : BOÃŽTE UNIQUE & GÃ‰NÃ‰RATEUR AUTOMATIQUE Â« ORGANISE NOTRE DATE ðŸ‡¨ðŸ‡² Â»
+   STYLE : BOÃŽTE UNIQUE & GÃ‰NÃ‰RATEUR AUTOMATIQUE « ORGANISE NOTRE DATE 🇨🇲 »
    ========================================================================== */
 
-/* --- BoÃ®te Ã  Surprise Unique --- */
+/* --- Boîte à Surprise Unique --- */
 .single-surprise-wrap {
   display: flex;
   flex-direction: column;
@@ -1958,7 +1958,7 @@ input[type="date"].custom-input {
   animation: pulseBeat 2s infinite ease-in-out;
 }
 
-/* Ã‰tat BoÃ®te Ouverte */
+/* Ã‰tat Boîte Ouverte */
 .luxury-single-gift.opened .gift-lid {
   transform: translateY(-75px) rotate(-14deg) scale(0.9);
   opacity: 0.85;
@@ -2023,7 +2023,7 @@ input[type="date"].custom-input {
   margin-bottom: 18px;
 }
 
-/* --- GÃ©nÃ©rateur Â« Organise notre date ðŸ‡¨ðŸ‡² Â» --- */
+/* --- Générateur « Organise notre date 🇨🇲 » --- */
 .mode-toggle-tabs {
   display: flex;
   gap: 8px;
@@ -2119,7 +2119,7 @@ input[type="date"].custom-input {
   box-shadow: 0 8px 24px rgba(225, 29, 72, 0.5);
 }
 
-/* Carte de RÃ©sultat de la Proposition */
+/* Carte de Résultat de la Proposition */
 .date-proposal-card {
   display: none;
   background: #FFFFFF;
@@ -2270,12 +2270,12 @@ input[type="date"].custom-input {
 }
 
 
-/* Animation pour la boÃ®te enveloppe de l'Ã‰tape 1 */
+/* Animation pour la boîte enveloppe de l'Ã‰tape 1 */
 .step-1-envelope-box {
   animation: fadeInDown 0.45s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
 
-/* En-tÃªtes de sous-sections de l'Ã‰tape 3 */
+/* En-têtes de sous-sections de l'Ã‰tape 3 */
 .step-section-heading {
   display: flex;
   align-items: center;
@@ -2289,10 +2289,10 @@ input[type="date"].custom-input {
 }
 
 /* ==========================================================================
-   EXPÃ‰RIENCE CINÃ‰MATOGRAPHIQUE & ANIMATIONS PREMIUM â¤ï¸âœ¨
+   EXPÃ‰RIENCE CINÃ‰MATOGRAPHIQUE & ANIMATIONS PREMIUM â¤ï¸✨
    ========================================================================== */
 
-/* --- 1. Ã‰cran d'ArrivÃ©e Spectaculaire --- */
+/* --- 1. Ã‰cran d'Arrivée Spectaculaire --- */
 .intro-arrival-overlay {
   position: fixed;
   inset: 0;
@@ -2548,7 +2548,7 @@ input[type="date"].custom-input {
   gap: 10px;
 }
 
-/* --- 4. Transition CinÃ©matographique entre les Ã‰tapes --- */
+/* --- 4. Transition Cinématographique entre les Ã‰tapes --- */
 .wizard-step.active {
   animation: cinematicStepIn 0.55s cubic-bezier(0.34, 1.56, 0.64, 1);
 }
@@ -2566,7 +2566,7 @@ input[type="date"].custom-input {
   }
 }
 
-/* --- 5. Effet Halo DorÃ© Plats & Toast Compliment --- */
+/* --- 5. Effet Halo Doré Plats & Toast Compliment --- */
 .choice-card.selected {
   border-color: #F59E0B !important;
   box-shadow: 0 0 0 3px rgba(245, 158, 11, 0.3), 0 12px 28px rgba(245, 158, 11, 0.22) !important;
@@ -2599,7 +2599,7 @@ input[type="date"].custom-input {
   transform: translateX(-50%) translateY(0);
 }
 
-/* --- 6. BoÃ®te Surprise CinÃ©matographique --- */
+/* --- 6. Boîte Surprise Cinématographique --- */
 .luxury-single-gift {
   animation: giftFloat 3.2s infinite ease-in-out;
 }
@@ -2655,7 +2655,7 @@ input[type="date"].custom-input {
   100% { transform: translate(-50%, -50%) scale(1.8) rotate(180deg); opacity: 0; }
 }
 
-/* --- 7. Calligraphie DorÃ©e Finale & Pulsation WhatsApp --- */
+/* --- 7. Calligraphie Dorée Finale & Pulsation WhatsApp --- */
 .final-golden-name-wrap {
   text-align: center;
   margin: 4px 0 16px 0;
